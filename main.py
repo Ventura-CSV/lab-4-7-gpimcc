@@ -8,7 +8,7 @@ def main():
     prevnum = None
     while True:
         currentnum = int(input("enter an integer: "))
-        if prevnum is None or prevnum <= currentnum:
+        if prevnum is None or prevnum >= currentnum:
             numbers.append(currentnum)
             prevnum = currentnum
         else:
